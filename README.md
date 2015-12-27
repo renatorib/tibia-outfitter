@@ -172,6 +172,8 @@ $outfit->render();
 Now you can test  
 *outfit.php?a=514&b=2&c=45&d=13&e=65&f=1&g=66083&&h=2&i=3*
 
+![](http://i.imgur.com/0mBJPDv.png)
+
 ---
 
-(Otland post)[https://otland.net/threads/new-tibia-outfitter-php.239183/](https://otland.net/threads/new-tibia-outfitter-php.239183/)
+[Otland post][https://otland.net/threads/new-tibia-outfitter-php.239183/]
