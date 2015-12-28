@@ -262,10 +262,8 @@ class Outfit {
                 if(imagesx($mount_image) < 64){
                     //transform 32x32 into 64x64
                     $base_mount = imagecreatetruecolor(64, 64);
-                    imagealphablending($base_mount, false);
                     imagesavealpha($base_mount, true);
-                    $col_mount = imagecolorallocatealpha($base_mount, 255, 255, 255, 0);
-                    imagefill($base_mount, 0, 0, $col_mount);
+                    imagefill($base_mount, 0, 0, imagecolorallocatealpha($base_mount, 0, 0, 0, 127));
 
                     imagecopyresampled($base_mount, $mount_image, 32, 32, 0, 0, 32, 32, 32, 32);
                     $mount_image = $base_mount;
@@ -281,10 +279,8 @@ class Outfit {
         // transform 32x32 into 64x64
         if(imagesx($image) < 64){
             $base = imagecreatetruecolor(64, 64);
-            imagealphablending($base, false);
             imagesavealpha($base, true);
-            $col = imagecolorallocatealpha($base, 255, 255, 255, 0);
-            imagefill($base, 0, 0, $col);
+            imagefill($base, 0, 0, imagecolorallocatealpha($base, 0, 0, 0, 127));
 
             imagecopyresampled($base, $image, 32, 32, 0, 0, 32, 32, 32, 32);
             $image = $base;
